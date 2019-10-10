@@ -29,6 +29,16 @@ html {
   background-color: rgba(180, 255, 244, .2);
 }
 
+.icon {
+  position: relative;
+  bottom: 0;
+}
+
+.icon {
+  bottom: 3px;
+}
+
+
 .btn-svg {
   right: .2em;
 }
