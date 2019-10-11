@@ -11,6 +11,13 @@ html {
 
 .text {
   color: #fff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, .7);
+}
+
+a {
+  text-decoration: none;
+  color: #b4fff4;
+  transition: all .2s linear;
 }
 
 .btn-ghost {
@@ -19,26 +26,47 @@ html {
 
   color: #b4fff4;
 
-  border-color: #b4fff4;
-  border-radius: 10px;
+  border-color: #90ccc3;
+  border-radius: 10px 10px 0 0;
+  transition: all .2s linear;
+}
+
+.btn-ghost:active {
+  top: 3em;
 }
 
 .btn-ghost:hover {
   color: #b4fff4;
-  border-color: #b4fff4;
+  border-color: #90ccc3;
   background-color: rgba(180, 255, 244, .2);
 }
 
 .icon {
   position: relative;
   bottom: 0;
+  transition: all .2s linear;
 }
 
-.icon {
-  bottom: 3px;
+.btn:hover .icon {
+  bottom: 4px;
 }
 
+.btn-ghost:hover,
+.btn-ghost:active,
+.btn-ghost:focus {
+  color: #b4fff4;
+  border-color: #90ccc3;
+  background-color: rgba(180, 255, 244, .2);
+}
 
-.btn-svg {
-  right: .2em;
+.btn-bottom {
+  position: absolute;
+  border: 3px solid #90ccc3;
+  border-radius: 0 0 10px 10px;
+  bottom: -.7em;
+  left: -3px;
+  width: calc(100% + 6px);
+  border-top: 0;
+  transition: all .2s linear;
+  min-height: .7em;
 }
